@@ -10,6 +10,12 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- deisyUI cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <!-- css styles -->
+  <style>
+    th, td{
+      padding-top: 20px;
+    }
+  </style>
 </head>
 
 <body class="bg-black">
@@ -25,136 +31,162 @@
   </header>
   <!-- main section starts from here -->
   <main class="w-11/12 mx-auto text-white bg-slate-900 mt-11 ">
-    <section class="grid grid-cols-3 grid-rows-2">
+    <section class="grid grid-cols-3 grid-rows-2 gap-4">
+      <!-- card section starts -->
       <div class="col-span-2 row-span-2 mr-5">
-          <!-- card making -->
-        <div class="grid grid-cols-3 gap-2">
-            <!-- card 1 -->
-            <div class="card w-full drop-shadow-2xl bg-slate-900">
-              <figure class="">
-                <img src="img/abd.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 class="text-xl font-semibold ">Ab De Velliars</h2>
-                <p> <small>South Africa</small></p>
-                <div class="card-actions">
-                  <button class="btn btn-primary">SELECT</button>
-                </div>
-              </div>
-            </div>
-             <!-- card 2 -->
-             <div class="card w-full  drop-shadow-2xl bg-slate-900">
-              <figure class="">
-                <img src="img/maxwell.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 class="text-xl font-semibold ">Glenn Maxwell</h2>
-                <p> <small>Australia</small></p>
-                <div class="card-actions">
-                  <button class="btn btn-primary">SELECT</button>
-                </div>
-              </div>
-            </div>
-             <!-- card 3-->
-             <div class="card w-full  drop-shadow-2xl bg-slate-900">
-              <figure class="">
-                <img src="img/anderson.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 class="text-xl font-semibold ">James Anderson</h2>
-                <p> <small>England</small></p>
-                <div class="card-actions">
-                  <button class="btn btn-primary">SELECT</button>
-                </div>
-              </div>
-            </div> 
-            <!-- card 4 -->
-            <div class="card w-full  drop-shadow-2xl bg-slate-900">
-             <figure class="">
-               <img src="img/clarke.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
-             </figure>
-             <div class="card-body items-center text-center">
-               <h2 class="text-xl font-semibold ">Michael Clarke</h2>
-               <p> <small>Australia</small></p>
-               <div class="card-actions">
-                 <button class="btn btn-primary">SELECT</button>
-               </div>
-             </div>
-           </div>
-            <!-- card 5 -->
-           <div class="card w-full  drop-shadow-2xl bg-slate-900">
+        <!-- card making -->
+      <div class="grid grid-cols-3 gap-2">
+          <!-- card 1 -->
+          <div class="card w-full drop-shadow-2xl bg-slate-900">
             <figure class="">
-              <img src="img/cummins.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
+              <img src="img/abd.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="text-xl font-semibold ">Pat Cummins</h2>
-              <p> <small>Australia</small></p>
+              <h2 class="text-xl font-semibold ">Ab De Velliars</h2>
+              <p> <small>South Africa</small></p>
               <div class="card-actions">
-                <button class="btn btn-primary">SELECT</button>
+                <button class="btn btn-primary" onclick="playersSelected(this)">SELECT</button>
               </div>
             </div>
           </div>
-           <!-- card 6 -->
+           <!-- card 2 -->
+           <div class="card w-full  drop-shadow-2xl bg-slate-900">
+            <figure class="">
+              <img src="img/maxwell.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="text-xl font-semibold ">Glenn Maxwell</h2>
+              <p> <small>Australia</small></p>
+              <div class="card-actions">
+                <button class="btn btn-primary" onclick="playersSelected(this)">SELECT</button>
+              </div>
+            </div>
+          </div>
+           <!-- card 3-->
+           <div class="card w-full  drop-shadow-2xl bg-slate-900">
+            <figure class="">
+              <img src="img/anderson.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="text-xl font-semibold ">James Anderson</h2>
+              <p> <small>England</small></p>
+              <div class="card-actions">
+                <button class="btn btn-primary" onclick="playersSelected(this)">SELECT</button>
+              </div>
+            </div>
+          </div> 
+          <!-- card 4 -->
           <div class="card w-full  drop-shadow-2xl bg-slate-900">
            <figure class="">
-             <img src="img/kohli.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
+             <img src="img/clarke.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
            </figure>
            <div class="card-body items-center text-center">
-             <h2 class="text-xl font-semibold ">Virat Kholi</h2>
-             <p> <small>India</small></p>
+             <h2 class="text-xl font-semibold ">Michael Clarke</h2>
+             <p> <small>Australia</small></p>
              <div class="card-actions">
-               <button class="btn btn-primary">SELECT</button>
+               <button class="btn btn-primary" onclick="playersSelected(this)">SELECT</button>
              </div>
            </div>
-         </div> 
-         <!-- card 7 -->
-        <div class="card w-full  drop-shadow-2xl bg-slate-900">
-          <figure class="">
-            <img src="img/steyn.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="text-xl font-semibold ">Dell Steyn</h2>
-            <p> <small>South Africa</small></p>
-            <div class="card-actions">
-              <button class="btn btn-primary">SELECT</button>
-            </div>
-          </div>
-        </div>
-         <!-- card 8-->
+         </div>
+          <!-- card 5 -->
          <div class="card w-full  drop-shadow-2xl bg-slate-900">
           <figure class="">
-            <img src="img/warner.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
+            <img src="img/cummins.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="text-xl font-semibold ">David Warner</h2>
+            <h2 class="text-xl font-semibold ">Pat Cummins</h2>
             <p> <small>Australia</small></p>
             <div class="card-actions">
-              <button class="btn btn-primary">SELECT</button>
+              <button class="btn btn-primary" onclick="playersSelected(this)">SELECT</button>
             </div>
           </div>
-        </div>     
-       <!-- card 9 -->
-       <div class="card w-full  drop-shadow-2xl bg-slate-900">
+        </div>
+         <!-- card 6 -->
+        <div class="card w-full  drop-shadow-2xl bg-slate-900">
+         <figure class="">
+           <img src="img/kohli.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
+         </figure>
+         <div class="card-body items-center text-center">
+           <h2 class="text-xl font-semibold ">Virat Kholi</h2>
+           <p> <small>India</small></p>
+           <div class="card-actions">
+             <button class="btn btn-primary" onclick="playersSelected(this)">SELECT</button>
+           </div>
+         </div>
+       </div> 
+       <!-- card 7 -->
+      <div class="card w-full  drop-shadow-2xl bg-slate-900">
         <figure class="">
-          <img src="img/lee.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
+          <img src="img/steyn.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="text-xl font-semibold ">Brett lee</h2>
-          <p> <small>Australia</small></p>
+          <h2 class="text-xl font-semibold ">Dell Steyn</h2>
+          <p> <small>South Africa</small></p>
           <div class="card-actions">
-            <button class="btn btn-primary">SELECT</button>
+            <button class="btn btn-primary" onclick="playersSelected(this)">SELECT</button>
           </div>
         </div>
       </div>
-
+       <!-- card 8-->
+       <div class="card w-full  drop-shadow-2xl bg-slate-900">
+        <figure class="">
+          <img src="img/warner.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="text-xl font-semibold ">David Warner</h2>
+          <p> <small>Australia</small></p>
+          <div class="card-actions">
+            <button class="btn btn-primary" onclick="playersSelected(this)">SELECT</button>
+          </div>
         </div>
-        <!-- card making ends here -->
+      </div>     
+     <!-- card 9 -->
+     <div class="card w-full  drop-shadow-2xl bg-slate-900">
+      <figure class="">
+        <img src="img/lee.jpg" alt="Ab de velliarse" class="rounded-xl w-full h-52" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="text-xl font-semibold ">Brett lee</h2>
+        <p> <small>Australia</small></p>
+        <div class="card-actions">
+          <button class="btn btn-primary" onclick="playersSelected(this)">SELECT</button>
+        </div>
       </div>
-      <div>
-        <ol>
-          <li>neymar</li>
-        </ol>
+    </div>
+
       </div>
+      <!-- card making ends here -->
+    </div>
+      <!-- card section ends -->
+      
+      <!-- player selection box starts   -->
+      <div class="text-white text-center bg-slate-900 ">
+
+     <h1 class="text-2xl text-center font-semibold text-orange-600 my-5">Your favourite Players Selected</h1>
+      <ol id="player-list">
+        
+      </ol>
+        <!-- table starts -->
+          <!-- <table class=" w-full bg-slate-900">
+          head -->
+            <!-- <thead class="bg-slate-900 text-2xl font-semibold p-6">
+              <tr class="p-6">
+                <th colspan="2">Your Top Five players</th>               
+              </tr>
+            </thead> -->
+
+            <!-- <tbody class="bg-slate-900" id="Player-list"> -->
+              <!-- row 1 -->
+              <!-- <tr>
+                <th style="width:20%">1</th>
+                <td>Quality Control Specialist</td>               
+              </tr>
+             
+            </tbody>
+          </table> --> 
+        <!-- table ends -->
+      </div>
+      <!-- player selection box ends -->
       <div>
         bank er hisab
       </div>
