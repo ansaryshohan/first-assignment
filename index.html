@@ -170,26 +170,28 @@
 
       <!-- caculation division starts -->
       <div class="p-10">
-        <h1 class="text-3xl font-semibold text-orange-600 text-center">Budget</h1>
+        <h1 class="text-5xl font-semibold text-orange-600 text-center mb-10">Budget</h1>
         <!-- sub div for per player -->
         <div class="grid grid-cols-2 aling-center justify-center mt-5">
           <h2 class="text-xl text-center texl-xl font-semibold">Per Player :</h2>
-          <input id="player-input-value" type="text" class="w-full h-10 block bg-black  border-2 border-white rounded-xl p-5">
+          <input id="player-input-value" type="text" value="1000"class="w-full h-10 block bg-black  border-2 border-white rounded-xl p-5">
         </div>
         <!-- Caculate button here -->
         <button id="player-calculate-btn" class="btn btn-primary block w-2/3 h-12 font-bold text-2xl text-center mt-5 mx-auto">Calculate</button>
-        <h1 class="text-2xl text-center texl-xl font-semibold mt-5">Player Expenses: $<span>00</span></h1>
+        <h1 class="text-2xl text-center texl-xl font-semibold mt-5">Player Expenses: $<span id="player-cost-total">00</span></h1>
+       
+       
         <!-- sub div for manager -->
         <div class="grid grid-cols-2 aling-center justify-center mt-5">
           <h2 class="text-xl text-center texl-xl font-semibold">Manager :</h2>
-          <input type="text" class="w-full h-10 block bg-black  border-2 border-white rounded-xl p-5">
+          <input id="manager-input-value" type="text" value="2000" class="w-full h-10 block bg-black  border-2 border-white rounded-xl p-5">
         </div>
         <!-- sub div for coach -->
         <div class="grid grid-cols-2 aling-center justify-center mt-5">
           <h2 class="text-xl text-center texl-xl font-semibold">Coach :</h2>
-          <input type="text" class="w-full h-10 block bg-black  border-2 border-white rounded-xl p-5">
+          <input id="coach-input-value" type="text" value="3000" class="w-full h-10 block bg-black  border-2 border-white rounded-xl p-5">
         </div>
-        <button class="btn btn-primary block w-2/3 h-12 font-bold text-center text-2xl mt-5 mx-auto">Calculate
+        <button id="total-calculation-btn" class="btn btn-primary block w-2/3 h-12 font-bold text-center text-2xl mt-5 mx-auto">Calculate
           Total</button>
         <h1 class="text-2xl text-center texl-xl font-semibold mt-5">Total Cost: $<span>00</span></h1>
 

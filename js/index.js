@@ -28,9 +28,22 @@ function playersSelected(element) {
   return playerArray.length;
 
 }
-console.log(playerArray)
+
 
 document.getElementById('player-calculate-btn').addEventListener('click', function(){
-  const playerValue= getInputValue('player-input-value')
-  console.log(playerValue)
+  const playerSallery= getInputValue('player-input-value')
+  const playerAmount= document.getElementById('player-list').children.length;
+  const playerTotalCost = playerSallery*playerAmount;
+
+  setElementValue('player-cost-total', playerTotalCost)
+})
+
+document.getElementById('total-calculation-btn').addEventListener('click', function(){
+  const coachSallery= getInputValue('coach-input-value');
+  const managerSallery= getInputValue('manager-input-value');
+  const totalPlayerCost= getElementInnerText('player-cost-total'); 
+
+  const totalcost= coachSallery+managerSallery+totalPlayerCost;
+
+
 })
