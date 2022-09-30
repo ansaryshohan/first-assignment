@@ -42,8 +42,7 @@ document.getElementById('total-calculation-btn').addEventListener('click', funct
   const coachSallery= getInputValue('coach-input-value');
   const managerSallery= getInputValue('manager-input-value');
   const totalPlayerCost= getElementInnerText('player-cost-total'); 
-
   const totalcost= coachSallery+managerSallery+totalPlayerCost;
-
-
+  
+  setElementValue('total-cost-required', totalcost)
 })
