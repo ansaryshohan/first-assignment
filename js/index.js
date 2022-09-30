@@ -19,11 +19,18 @@ function playersSelected(element) {
     else {
       const li = document.createElement('li')
       li.innerHTML = `
- <li>${i + 1}. ${selectedPlayerName}</li>
+ <li class= "mb-5 text-3xl font-semibold">${i + 1}. ${selectedPlayerName}</li>
  `
       playerList.appendChild(li);
     }
 
   }
+  return playerArray.length;
 
 }
+console.log(playerArray)
+
+document.getElementById('player-calculate-btn').addEventListener('click', function(){
+  const playerValue= getInputValue('player-input-value')
+  console.log(playerValue)
+})
